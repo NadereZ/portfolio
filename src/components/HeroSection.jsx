@@ -3,14 +3,19 @@ import Navbar from "./Navbar";
 
 const HeroSection = () => {
   return (
-    <>
-      <div>
-        <Navbar />
+    <div className="min-h-screen bg-gray-900 text-white flex flex-col">
+      <Navbar />
+      <div className="flex-1 flex items-center justify-center p-4">
+        <div className="max-w-4xl w-full px-4 text-center">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight mb-4">
+            Hello!
+          </h1>
+          <h2 className="text-indigo-400 text-4xl md:text-6xl font-bold tracking-tight leading-tight">
+            Welcome to my Website.
+          </h2>
+        </div>
       </div>
-      <div  className="flex flex-col md:items-center items-start xl:gap-y-10 gap-y-3 xl:mb-20 mb-0 bg-gray-900">
-        <h1>I'm a software engineer.</h1>
-      </div>
-    </>
+    </div>
   );
 };
 

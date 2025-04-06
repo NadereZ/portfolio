@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className="flex items-center">
         <a
           href="#home"
-          className="md:text-2xl text-lg text-white hover:text-blue-500 transition-colors duration-300 font-medium"
+          className="md:text-2xl text-lg text-white hover:text-indigo-400  transition-colors duration-300 font-medium"
           aria-label="Navigate to home page"
         >
           Nadere Zaboli
@@ -35,7 +35,7 @@ const Navbar = () => {
           <a
             key={item.id}
             href={item.href}
-            className="group relative text-white hover:text-blue-500 transition-colors duration-300"
+            className="group relative text-white hover:text-indigo-400  transition-colors duration-300"
           >
             {/* Link Text */}
             <span className="lg:text-lg text-base font-light tracking-wide">
@@ -43,7 +43,7 @@ const Navbar = () => {
             </span>
             
             {/* Animated Underline Effect */}
-            <span className="absolute -bottom-1 left-0 w-0 h-px bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute -bottom-1 left-0 w-0 h-px bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
           </a>
         ))}
       </nav>
